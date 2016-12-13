@@ -1,0 +1,17 @@
+$webResourceManager.requireResource("sk.eea.geodata.reports.geodata4jira-reports:heat-map-action-resources")
+
+<html>
+
+<head>
+    <title>HeatMap Action</title>
+    <meta name="decorator" content="admin">
+</head>
+
+<body>
+    <h1>HeatMap Action</h1>
+
+    <div id="heat-map-original"></div>
+    <div id="heat-map-custom"></div>
+
+</body>
+</html>

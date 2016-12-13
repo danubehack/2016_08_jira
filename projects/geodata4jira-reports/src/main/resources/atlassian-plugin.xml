@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<atlassian-plugin key="${atlassian.plugin.key}" name="${project.name}" plugins-version="2">
+  
+  <plugin-info>
+    <description>${project.description}</description>
+    <version>${project.version}</version>
+    <vendor name="${project.organization.name}" url="${project.organization.url}"/>
+    <param name="plugin-icon">images/pluginIcon.png</param>
+    <param name="plugin-logo">images/pluginLogo.png</param>
+  </plugin-info>
+  
+  <resource type="i18n" name="i18n" location="geodata4jira-reports"/>
+
+  <!-- Web resources -->
+  <web-resource key="heat-map-action-resources" name="Heat Map Action Web Resource">
+    <resource type="download" name="leaflet.js" location="/map/leaflet/leaflet.js"/>
+    <resource type="download" name="leaflet.css" location="/map/leaflet/leaflet.css"/>
+    <resource type="download" name="leaflet-heat.js" location="/map/leaflet.heat/leaflet-heat.js"/>
+    <resource type="download" name="images/" location="/map/leaflet/images"/>
+
+    <resource type="download" name="heat-map-action.js" location="/js/heat-map-action.js"/>
+    <resource type="download" name="heat-map-action.css" location="/css/heat-map-action.css"/>
+  </web-resource>
+
+  <!-- Actions -->
+  <webwork1 key="heat-map-action" name="HeatMapAction" i18n-name-key="heat-map-action.name">
+    <description key="heat-map-action.description">The Heat Map Action</description>
+    <actions>
+      <action name="sk.eea.geodata.reports.actions.HeatMapActionAction" alias="HeatMapActionAction">
+        <view name="success">/templates/heat-map-action/success.vm</view>
+        <view name="input">/templates/heat-map-action/input.vm</view>
+        <view name="error">/templates/heat-map-action/error.vm</view>
+      </action>
+    </actions>
+  </webwork1>
+
+</atlassian-plugin>

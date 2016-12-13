@@ -1,0 +1,4 @@
+(function Form() {
+    'use strict';
+
+}());

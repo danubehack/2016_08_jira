@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Map with dataset</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
+
+    <script src="https://use.fontawesome.com/e0cb87f16f.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/MarkerCluster.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/MarkerCluster.Default.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster-src.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.3.15/proj4.js"></script>
+
+    <script>
+        Map = {};
+    </script>
+
+    <link rel="stylesheet" href="tabs/tabs.css">
+    <script src="tabs/tabs.js"></script>
+
+    <script src="data/dog_bin.js"></script>
+    <script src="data/bin.js"></script>
+
+    <link rel="stylesheet" href="map.css">
+    <script src="map.js"></script>
+
+    <script src="overlay.js"></script>
+    <link rel="stylesheet" href="overlay.css">
+
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div id="map"></div>
+    <div id="dataset-picker-container">
+        <form>
+            <select id="dataset-picker">
+                <option value="" disabled aria-disabled="true">—</option>
+            </select>
+        </form>
+    </div>
+
+    <div id="overlay">
+        <div id="close-overlay">&times;</div>
+        <div class="content">
+            <div id="tabs" class="c-tabs no-js">
+                <div class="c-tabs-nav">
+                    <a href="#" class="c-tabs-nav__link is-active">
+                        <span>Create Issue</span>
+                    </a>
+                    <a href="#" class="c-tabs-nav__link">
+                        <span>Show Issues</span>
+                    </a>
+                </div>
+                <div class="c-tab is-active">
+                    <div class="c-tab__content ">
+                        <form method="post" action="#" id="geodata-form">
+                            <div class="group required">
+                                <label for="summary">Summary</label>
+                                <input type="text" name="summary" id="summary">
+                            </div>
+                            <div class="group required">
+                                <label for="description">Description</label>
+                                <textarea name="description" id="description"></textarea>
+                            </div>
+                            <div class="group required">
+                                <label for="email">E-Mail</label>
+                                <input type="email" name="email" id="email">
+                            </div>
+                            <div class="group required">
+                                <label for="name">Name</label>
+                                <input type="text" name="name" id="name">
+                            </div>
+                            <div class="group required">
+                                <label for="surname">Surname</label>
+                                <input type="text" name="surname" id="surname">
+                            </div>
+                            <div class="group required">
+                                <label for="address">Address</label>
+                                <input type="text" name="address" id="address">
+                            </div>
+                            <div class="group required">
+                                <label for="phone">Phone</label>
+                                <input type="tel" name="phone" id="phone">
+                            </div>
+
+                            <div class="group submit">
+                                <input type="submit" value="Add Issue">
+                            </div>
+
+                            <div class="group hidden">
+                                <input type="text" id='featureid' name='featureid' value="">
+                            </div>
+
+                            <div class="group" id="message-container"></div>
+                        </form>
+                    </div>
+                </div>
+                <div class="c-tab">
+                    <div class="c-tab__content" id="issues-for-feature">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

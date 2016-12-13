@@ -1,0 +1,12 @@
+#heat-map-original {
+    float: left;
+    width: 700px;
+    height: 700px;
+}
+
+#heat-map-custom {
+    margin-left: 5%;
+    float: left;
+    width: 700px;
+    height: 700px;
+}
