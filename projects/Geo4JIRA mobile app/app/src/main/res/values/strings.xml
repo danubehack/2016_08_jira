@@ -1,0 +1,47 @@
+<resources>
+
+    <!--App settings-->
+    <string name="jira_url" translatable="false">http://192.168.1.223:2990/jira/</string>
+    <string name="jira_issue_collector" translatable="false">rest/utopia/1.0/collector/issueCollector</string>
+
+    <!--App UI strings-->
+    <string name="app_name" translatable="false">Geo4JIRA</string>
+    <!--textviews-->
+    <string name="user_credential_name_text">name</string>
+    <string name="user_credential_email_text">email</string>
+    <string name="user_credential_address_text">address</string>
+    <string name="user_credential_phone_text">phone</string>
+    <string name="user_credential_surname_text">surname</string>
+    <!--labels-->
+    <string name="user_credential_name_label_text">Name</string>
+    <string name="user_credential_email_label_text">Email</string>
+    <string name="user_credential_address_label_text">Address</string>
+    <string name="user_credential_phone_label_text">Phone</string>
+    <string name="user_credential_surname_label_text">Surname</string>
+    <!--buttons-->
+    <string name="user_credential_gotoapp_butn_text">PUSH BUTAN!</string>
+
+    <!--App error strings-->
+    <string name="error_input_is_empty">Empty input!</string>
+    <string name="error_malformed_email">Malformed email!</string>
+    <string name="error_malformed_phone">Malformed phone number!</string>
+    <string name="error_incomplete_user_data">User data incomplete!</string>
+    <string name="title_activity_geo_form">GeoForm</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!--Shared preference strings-->
+    <string name="pref_dirty">preferenceIsDirty</string>
+    <string name="pref_name">name</string>
+    <string name="pref_surname">surname</string>
+    <string name="pref_email">email</string>
+    <string name="pref_address">address</string>
+    <string name="pref_phone">phone</string>
+
+
+
+
+</resources>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_geo_form"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="sk.eea.geo4jira.GeoForm"
+    tools:showIn="@layout/app_bar_geo_form">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="133dp"
+                android:text="Geo4JIRA"
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="Summary"
+                    android:layout_width="72dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView5" />
+
+                <EditText
+                    android:inputType="textMultiLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/geo_form_summary"
+                    android:padding="10dp"
+                    android:lines="5"
+                    android:overScrollMode="always"
+                    android:scrollbarStyle="insideInset"
+                    android:minLines="5"
+                    android:scrollbars="vertical"
+                    android:layout_marginBottom="20dp"
+                    android:text="Bacon ipsum dolor amet beef ribs corned beef fatback picanha filet mignon bresaola. Kevin cow tenderloin cupim, tri-tip jerky rump brisket. Jowl shank beef, tri-tip turkey shankle hamburger t-bone jerky alcatra cow corned beef biltong shoulder sausage. Boudin jowl t-bone bresaola leberkas tenderloin." />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="Description"
+                    android:layout_width="72dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView6" />
+
+                <EditText
+                    android:inputType="textMultiLine"
+                    android:layout_width="281dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/geo_form_description"
+                    android:padding="10dp"
+                    android:lines="5"
+                    android:overScrollMode="always"
+                    android:scrollbarStyle="insideInset"
+                    android:minLines="5"
+                    android:scrollbars="vertical"
+                    android:layout_marginBottom="20dp"
+                    android:text="Doner prosciutto filet mignon short ribs fatback flank ground round venison short loin shank sausage cow. Ham prosciutto bacon, beef brisket cow ribeye turkey tail meatball bresaola tongue t-bone frankfurter pork. Swine tongue turkey, venison pork shankle bacon spare ribs short ribs. Andouille jowl flank, porchetta turkey picanha tenderloin beef ribs short ribs. Pancetta pork loin beef ribs, sausage jowl frankfurter tenderloin corned beef short ribs sirloin kevin." />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
