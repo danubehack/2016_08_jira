@@ -11,6 +11,7 @@ Our work in the project is focused on three goals:
 # Members of project team
 > Andrej Ďumbala (andrej.dumbala@eea.sk), Tomáš Matula (tomas.matula@eea.sk), Pavol Goliaš (pavol.golias@eea.sk), Karol Bujaček (karol.bujacek@eea.sk), László Nagy (laszlo.nagy@eea.sk), Jozef Szadvári
 
+# Project status
 > At the present we cannot provide the link to project we created on DanubeHack 2.0, because it is not on production server now. It has to be updated and tested first. For now, you can check the current state of GeoData 4 JIRA (which is the project we based our work on) on these links:
 - http://pr.banm.sk/liferay/mapa-podnetov
 - http://pr.banm.sk/liferay/mapa-projektov
